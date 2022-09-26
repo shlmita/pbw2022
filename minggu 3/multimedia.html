@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Multimedia - HTML 5 </title>
+	</head>
+	<body>
+		<h1 style="text-align: center;">Belajar Multimedia - HTML 5</h1>		
+		<table align="center">
+			<tr style="text-align: center;">
+				<td>
+					<p>
+						<button onclick="playVid()" type="button">Play Video</button>
+						<button onclick="pauseVid()" type="button">Pause Video</button>
+						<button onclick="durationVid()" type="button">Duration Video</button>
+						<button onclick="checkControls()" type="button">Check Controls</button>
+						<button onclick="disableControls()" type="button">Disable Controls</button>
+						<button onclick="enableControls()" type="button">Enable Controls</button>
+					</p>
+				</td>
+			</tr>
+
+			<tr align="center">
+				<td>
+					<!--video-->
+					<video width="500" id="myVideo">
+						<source src="video.mp4" type="video/mp4">
+						Browser not support...
+					</video>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<!--yt1-->
+					<iframe width="500" height="315" src="https://www.youtube.com/embed/BqTxM7g0guE"></iframe>
+					<!--yt2-->
+					<iframe width="500" height="315" src="https://www.youtube.com/embed/h0KYF2Crap4"></iframe>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			
+			<tr align="center">
+				<td>
+					<!--Audio local-->
+					<audio controls>
+						<source src="lagu.mp3" type="audio/mp3">
+					</audio>
+				</td>
+			</tr>
+			
+			<script>
+				var vid = document.getElementById("myVideo");
+
+				function playVid() {
+					vid.play();
+					vid.loop = true;
+				}
+				
+				function pauseVid() {
+					vid.pause();
+				}
+				
+				function durationVid() {
+					alert(vid.duration)
+				}
+				
+				function enableControls() {
+					vid.controls = true;
+					vid.load();
+				}
+					
+				function disabledControls() {
+					vid.controls = false;
+					vid.load();
+				}
+					
+				function checkControls() {
+					alert(check.controls)
+				}
+				</script>
+		</table>
+
+	</body>
+			
+			
+			
+</html>
