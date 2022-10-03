@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PPDB 2020</title>
+</head>
+<style>
+	table {
+	  width: 70%;
+	  border-collapse: collapse ;
+	  font:normal normal 12px Verdana,Arial,Sans-Serif;
+	  border-width:1px #000000;
+	}
+	
+	td, th {
+	  border: 1px solid #2c2c2c;
+	  text-align: left;
+	  padding: 8px;
+	}
+
+	.hps {
+		border-left: none;
+		border-right: none;
+	}
+	
+	.hps2 {
+		border-left: none;
+	}
+
+	th {
+		background-color: rgb(216, 216, 216);
+		width: 2px;
+		text-align: center;
+	}
+	.no {
+		text-align: center;
+		padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #ffffff;
+	}
+	.submit {
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+	<h4><center>FORMULIR PPDB JALUR ZONASI TAHUN 2020</center></h4>
+	<form name="fmhs" method="post" action="code.php">
+		<table align="center">
+			<!-- INFO PENDAFTARAN -->
+			<tr>
+				<th style="width: 20px;">NO</th>
+				<th colspan="3">INFO PENDAFTARAN</th>
+			</tr>
+			<tr>
+				<td class="no">1</td>
+				<td class="hps">NISN</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="number" name="fnisn"></td>
+			</tr>
+			<tr>
+				<td class="no">2</td>
+				<td class="hps">Asal Sekolah</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fasal.sekolah"></td>
+			</tr>
+			<tr>
+				<td class="no">3</td>
+				<td class="hps">Tahun Lulus</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="number" name="ftahun.lulus"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="hps">Foto Ijazah yang telah dilegalisir</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="file" name="fijazah"></td>
+			</tr>
+
+			<!-- DATA CALON PESERTA -->
+			<tr>
+				<th colspan="4">DATA CALON PESERTA</th>
+			</tr>
+			<tr>
+				<td class="no">4</td>
+				<td class="hps">Nama Lengkap</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fnama.lengkap"></td>
+			</tr>
+			<tr>
+				<td class="no">5</td>
+				<td class="hps">NIK</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="number" name="fnik"></td>
+			</tr>
+			<tr>
+				<td class="no">6</td>
+				<td class="hps">Tempat/Tanggal Lahir</td>
+				<td class="hps">:</td>
+				<td class="hps2">
+					<input type="text" name="ftempat.lahir">
+					<input type="date" name="ftanggal.lahir">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Umur</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="number" name="fumur"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Foto Copy Akta kelahiran yang telah dilegalisir</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="file" name="fakta"></td>
+			</tr>
+			<tr>
+				<td class="no">7</td>
+				<td class="hps">Jenis Kelamin</td>
+				<td class="hps">:</td>
+				<td class="hps2">
+					<input type="radio" name="fjkelamin" value="laki-laki" id="laki-laki" /><label for="laki-laki">Laki-Laki</label>
+						<input type="radio" name="fjkelamin" value="perempuan" id="perempuan" /><label for="perempuan">Perempuan</label>
+				</td>
+			</tr>
+			<tr>
+				<td class="no">8</td>
+				<td class="hps">Alamat</td>
+				<td class="hps">:</td>
+				<td class="hps2">
+					<textarea name="falamat" placeholder="Alamat Lengkap" id="Alamat" cols="30" rows="1"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Desa/Kel.</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fdesa"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Kecamatan</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fkec"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Kabupaten</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fkab"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Provisi</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fprov"></td>
+			</tr>
+			<tr>
+				<td class="no">9</td>
+				<td class="hps">Email Aktif</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="femail"></td>
+			</tr>
+
+			<!-- DATA CALON PESERTA -->
+			<tr>
+				<th colspan="4">DATA CALON PESERTA</th>
+			</tr>
+			<tr>
+				<td class="no">10</td>
+				<td class="hps">Nomor Kartu Keluarga</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="number" name="fnik"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="hps">Foto Copy Kartu Keluarga yang telah dilegalisir</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="file" name="fkk"></td>
+			</tr>
+			<tr>
+				<td class="no">11</td>
+				<td class="hps">Nama Ayah Kandung</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fnama.ayah"></td>
+			</tr>
+			<tr>
+				<td class="no">12</td>
+				<td class="hps">Agama</td>
+				<td class="hps">:</td>
+				<td class="hps2">
+					<select  name="fagama.ayah">
+						<option value="Pilih Agama">Pilih Agama</option>
+						<option value="Islam">Islam</option>
+						<option value="Kristen">Kristen</option>
+						<option value="Katholik">Katolik</option>
+						<option value="Hindu">Hindu</option>
+						<option value="Budha">Buddha</option>
+						<option value="Konghucu">Konghucu</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="no">13</td>
+				<td class="hps">Pekerjaan</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fpekerjaan.ayah"></td>
+			</tr>
+			<tr>
+				<td class="no">14</td>
+				<td class="hps">Nama Ibu Kandung</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fnama.ibu"></td>
+			</tr>
+			<tr>
+				<td class="no">15</td>
+				<td class="hps">Agama</td>
+				<td class="hps">:</td>
+				<td class="hps2">
+					<select  name="fagama.ibu">
+						<option value="Pilih Agama">Pilih Agama</option>
+						<option value="Islam">Islam</option>
+						<option value="Kristen">Kristen</option>
+						<option value="Katholik">Katolik</option>
+						<option value="Hindu">Hindu</option>
+						<option value="Budha">Buddha</option>
+						<option value="Konghucu">Konghucu</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="no">16</td>
+				<td class="hps">Pekerjaan</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fpekerjaan.ibu"></td>
+			</tr>
+			<tr>
+				<td class="no">17</td>
+				<td class="hps">Alamat Orang Tua</td>
+				<td class="hps">:</td>
+				<td class="hps2">
+					<textarea name="falamat.ortu" placeholder="Alamat Lengkap" id="Alamat" cols="30" rows="1"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Desa/Kel.</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fdesa.ortu"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Kecamatan</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fkec.ortu"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Kabupaten</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fkab.ortu"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding-left: 50px;" class="hps">Provisi</td>
+				<td class="hps">:</td>
+				<td class="hps2"><input type="text" name="fprov.ortu"></td>
+			</tr>
+			<td colspan="4" class="submit" align="right">
+				<input type="submit" required>
+				<input type="reset" required>
+			</td>
+		</table>
+	</form>
+</body>
+</html>
+		
