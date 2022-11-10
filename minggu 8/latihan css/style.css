@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    padding: 30px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    border: 1px solid rgb(88, 88, 88);
+    text-align: center;
+}
+nav{
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    border: 1px solid rgb(110, 110, 110);
+    display: block;
+    padding: 0px;
+    margin-top: 0px;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li {
+    font-size: 18px;
+    margin: 10px;
+}
+      
+/* Change the link color to #111 (black) on hover */
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+article {
+    float: left;
+    width: 85%;
+    background-color: white;
+    border: 4px solid black;
+    padding: 0 20px;
+}
+.satu{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 107, 179);
+}
+.dua{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(163, 0, 0);
+}
+.tiga{
+    font-family:'Courier New', Courier, monospace ;
+    color: rgb(0, 173, 92);
+}
+input[type=text] { 
+    background: none; 
+    color: rgb(105, 105, 105); 
+    padding: 10px; 
+    border: 1px solid rgb(117, 117, 117); 
+    margin-bottom: 10px;
+} 
+footer {
+    text-align: center;
+    margin-top: 225px;
+    padding: 2px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
