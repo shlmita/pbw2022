@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px;
+      font-size: 30px;
+      border: 1px solid rgba(0,0,0,0.8);
+    }
+    .header-item{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0,0,0,0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .nav-item {
+      grid-column: 1;
+      grid-row: 2 / span 2;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .nav-item {
+      grid-column: 1;
+      grid-row: 2 / span 2;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0,0,0,0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>A Five Items Grid Layout</h1>
+    <div class="grid-container">
+        <div class="header-item">1</div>
+        <div class="nav-item">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>  
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>  
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+    </div>
+</body>
+</html>
